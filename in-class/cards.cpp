@@ -17,7 +17,7 @@ const string suit_names[] = {
 };
 // Each possibility must be an identifier (legit name)
 enum Rank {
-    TWO = 2, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN,
+    TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN,
     JACK, QUEEN, KING, ACE
 };
 // Array of rank names
@@ -37,6 +37,28 @@ typedef struct {
 // Forward declaration
 void printCard(Card card);
 
+//return_type identifier(parameters, ...);
+vector<Card> makeDeck() {
+    // create a vector
+    vector<Card> deck;
+    // create all the cards
+    Card card;
+    // for each suit,...
+    for (int i = 0; i < 4; i ++){
+        //for each rank,...
+        for (int j = 0; j < 13; j++){
+            // create the appropriate card
+            card.suit = (suit)i;// type casting, FTW
+            card.rank = (Rank)j;
+            //push it into the vector
+            deck.push_back(card);
+        }
+    }
+    
+    // return the vector
+    return deck;
+}
+
 // Type
 // variable
 // CONSTANT
@@ -46,13 +68,15 @@ int main() {
     int age;
     string name;
     
-    Card card;
+    // We'll need to define makeDeck()
+    vector<Card> deck = makeDeck();
     
-    // variable = some_value;
-    card.suit = SPADES;
-    card.rank = ACE;
+    for(int i = 0; i < deck.size(); i++){
+        printCard(deck[i]);
+        cout << endl;
+    }
     
-    printCard(card);
+   
     
     return 0;
 }
@@ -61,5 +85,5 @@ int main() {
 // How about "Ace of Spades"
 void printCard(Card card) {
     cout << rank_names[card.rank] << " of "
-        << suit_names[card.suit] << endl;
+        << suit_names[card.suit];
 }
