@@ -7,9 +7,24 @@
 //
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+//c++ has references, which are nicer syntax for C-style pointers
+//
+void age_a_year(int & age) {
+    age++;
 }
+
+//C-style version
+void age_a_year_old_c_way(int * age){
+    (*age)++;
+}
+
+int main() {
+    int jack = 50;
+    age_a_year(jack);
+    age_a_year_old_c_way(&jack);
+    cout << jack << endl;
+}
+
+

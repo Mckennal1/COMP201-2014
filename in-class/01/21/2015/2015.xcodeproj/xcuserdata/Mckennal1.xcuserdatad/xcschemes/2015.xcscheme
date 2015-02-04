@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EF264AC71A7BFFA60031EC1C"
-               BuildableName = "jack age"
-               BlueprintName = "jack age"
-               ReferencedContainer = "container:jack age.xcodeproj">
+               BlueprintIdentifier = "EFC2CCB41A70225700D541AD"
+               BuildableName = "2015"
+               BlueprintName = "2015"
+               ReferencedContainer = "container:2015.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EF264AC71A7BFFA60031EC1C"
-            BuildableName = "jack age"
-            BlueprintName = "jack age"
-            ReferencedContainer = "container:jack age.xcodeproj">
+            BlueprintIdentifier = "EFC2CCB41A70225700D541AD"
+            BuildableName = "2015"
+            BlueprintName = "2015"
+            ReferencedContainer = "container:2015.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EF264AC71A7BFFA60031EC1C"
-            BuildableName = "jack age"
-            BlueprintName = "jack age"
-            ReferencedContainer = "container:jack age.xcodeproj">
+            BlueprintIdentifier = "EFC2CCB41A70225700D541AD"
+            BuildableName = "2015"
+            BlueprintName = "2015"
+            ReferencedContainer = "container:2015.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EF264AC71A7BFFA60031EC1C"
-            BuildableName = "jack age"
-            BlueprintName = "jack age"
-            ReferencedContainer = "container:jack age.xcodeproj">
+            BlueprintIdentifier = "EFC2CCB41A70225700D541AD"
+            BuildableName = "2015"
+            BlueprintName = "2015"
+            ReferencedContainer = "container:2015.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
