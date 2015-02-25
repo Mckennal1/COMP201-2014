@@ -20,7 +20,6 @@ private:
     SDL_Window* window;
     SDL_Surface* screen;
     bool fail;
-    std::map<char, SDL_Surface*> letters;
     SDL_Surface* load(char * path);
 };
 #endif

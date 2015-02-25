@@ -3,7 +3,7 @@ CFLAGS=-c -g -Wall -Dmain=SDL_main
 LDFLAGS=-I/usr/local/include/SDL2 -D_THREAD_SAFE -L/usr/local/lib -lSDL2main -lSDL2 -lSDL2_image
 SOURCES=model.cpp view.cpp controller.cpp main.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=lab4.exe
+EXECUTABLE=lab5.exe
 
 all: $(SOURCES) $(EXECUTABLE)
 
