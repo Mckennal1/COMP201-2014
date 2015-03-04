@@ -153,7 +153,19 @@ void Model::flip(int row, int column) {
         return;
     }
     visible[row][column] = grid[row][column];
-    
+    if (valid(lastRow,lastColumn)){
+        if (grid[row][column] == grid[lastRow][lastColumn]){
+            lastRow = lastColumn = -1;
+        }
+        else {
+            visible[lastRow][lastColumn] = '*';
+            lastRow = row;
+            lastColumn = column;
+        }
+    }else {
+        lastRow = row;
+        lastColumn = column;
+    }
 }
 // TODO: If everything is visible, then it's game over
 bool Model::gameOver() {

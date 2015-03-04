@@ -60,6 +60,7 @@ void Controller::loop() {
 }
 
 /*
+//
 // Show the board
 // Read in coordinates
 // Until we're done

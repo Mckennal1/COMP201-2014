@@ -44,13 +44,19 @@ void Model::crawl() {
     }
     // TODO: Colliding with the perimeter of the screen should set direction to DEAD
     // When DEAD, the snake slowly shrinks down to nothing
-    
     if (direction != DEAD) {
         snake.push_front(front);
     }
 
     // TODO: Colliding with food grows the snake (so don't pop_back in that case)
+    if(head.x == food.x && head.y == food.y){
+        Coordinate back = snake.back();
+        back.x = back.x + 1;
+        snake.push_front(back);
+    }
+    else {
+        snake.pop_back();
+    }
     // TODO: Also, colliding with food should cause us to place the food somewhere
     // else, but not anywhere on the snake.
-    snake.pop_back();
 }
